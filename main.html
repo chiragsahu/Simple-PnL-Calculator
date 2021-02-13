@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="row">
+        <div class="column inp">
+          <p>Buy Price</p>
+          <input type="text" class="buy_price trigger" />
+        </div>
+        <div class="column">
+          <p>Sell Price</p>
+          <input type="text" class="input sell_price trigger" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Buy Quantity</p>
+          <input
+            type="text"
+            class="buy_qty trigger"
+            placeholder="leave blank for 1"
+          />
+        </div>
+        <div class="column">
+          <p>Sell Quantity</p>
+          <input
+            type="text"
+            class="sell_qty trigger"
+            placeholder="leave blank for all"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <p>Buy Value</p>
+          <input
+            type="text"
+            class="buyValue trigger1"            
+          />
+        </div>
+        <div class="column">
+          <p>Sell Quantity</p>
+          <input
+            type="text"
+            class="sellValue trigger1"            
+          />
+        </div>
+      </div>
+
+      <div class="fee-detail">
+        <p style="justify-content: center; margin: 20px">Used WRX ?</p>
+        <div
+          class="button r center"
+          id="button-1"
+          style="position: absolute; top: 24%; right: 32%"
+        >
+          <input type="checkbox" class="checkbox trigger" value="on" checked />
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
+
+      <p>Fee:</p>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            Buy Fee
+            <p class="result buyFee"></p>
+          </div>
+          <div class="column">
+            Sell Fee
+            <p class="result sellFee"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            Total Fee
+            <p class="totalFee"></p>
+          </div>
+        </div>
+      </div>
+      <div class="profit">
+        Net P/L:
+        <span class="amount"></span>
+        <span class="status"></span>
+      </div>
+    </div>
+  </body>
+</html>
