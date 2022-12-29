@@ -4,3 +4,5 @@
 Simply enter buy and sell value and other required fields.
 
 You can change fees % in the main.js file
+
+https://chiragsahu.github.io/Simple-PnL-Calculator/
